@@ -26,6 +26,8 @@ window.swal = swal;
 
 Vue.component('slider-component', require('./components/Slider.vue').default);
 Vue.component('user', require('./components/User.vue').default);
+Vue.component('evento', require('./components/Evento.vue').default);
+Vue.component('novedad', require('./components/Novedad.vue').default);
 
 //frontend
 

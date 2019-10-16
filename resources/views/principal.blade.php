@@ -8,14 +8,16 @@
     <meta name="description" content="Sistema Ventas Laravel Vue Js- IncanatoIT">
     <meta name="author" content="Incanatoit.com">
     <meta name="keyword" content="Sistema ventas Laravel Vue Js, Sistema compras Laravel Vue Js">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <meta name="csrf-token" content="{{csrf_token()}}">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="css/simple-line-icons.min.css" rel="stylesheet">
     <!-- Main styles for this application -->
     <link href="css/style.css" rel="stylesheet">
-    <title>Sistema Ventas - IncanatoIT</title>
+    <title>Secretaria General</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/12.4.0/classic/ckeditor.js"></script>
+
 
     <!-- Icons -->
 
@@ -106,10 +108,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script  src="plantilla/js/pace.min.js"></script>
     <script  src="plantilla/js/template.js"></script>
-    <script>
 
 
-    </script>
 
 
 </body>

@@ -28,10 +28,10 @@
                 </ul>
             </li>
             <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-basket"></i> Ventas</a>
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-basket"></i> Eventos</a>
                 <ul class="nav-dropdown-items">
                     <li @click="menu=5" class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-basket-loaded"></i> Ventas</a>
+                        <a class="nav-link" href="#"><i class="icon-basket-loaded"></i> Eventos</a>
                     </li>
                     <li @click="menu=6" class="nav-item">
                         <a class="nav-link" href="#"><i class="icon-notebook"></i> Clientes</a>
@@ -39,10 +39,10 @@
                 </ul>
             </li>
             <li class="nav-item nav-dropdown">
-                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-people"></i> Acceso</a>
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-people"></i>Novedad</a>
                 <ul class="nav-dropdown-items">
                     <li @click="menu=7" class="nav-item">
-                        <a class="nav-link" href="#"><i class="icon-user"></i> Usuarios</a>
+                        <a class="nav-link" href="#"><i class="icon-user"></i> Novedad</a>
                     </li>
                     <li @click="menu=8" class="nav-item">
                         <a class="nav-link" href="#"><i class="icon-user-following"></i> Roles</a>

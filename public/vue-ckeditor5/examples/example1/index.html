@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom CKEditor example</title>
+
+  <!-- Vue -->
+  <script src="//cdn.jsdelivr.net/npm/vue"></script>
+
+  <!-- CustomEditors BalloonEditor -->
+  <!-- CustomEditors ClassicEditor -->
+  <!-- CustomEditors DecoupledEditor -->
+  <!-- CustomEditors InlineEditor -->
+  <!-- CustomEditors ClassicMarkdownEditor -->
+  <script src="../custom-editors/ckeditor.js"></script>
+
+  <!-- Translation of CKEditor -->
+  <script src="../custom-editors/translations/ru.js"></script>
+
+  <!-- VueCkeditor -->
+  <script src="../../dist/vue-ckeditor5.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script>
+    Vue.use(VueCkeditor.plugin, {
+      editors: {
+        'classic': CustomEditors.ClassicEditor,
+        'inline': CustomEditors.InlineEditor,
+        'markdown': CustomEditors.ClassicMarkdownEditor
+      }
+    })
+
+    new Vue({
+      el: '#app',
+      data: {
+        htmlContent: '<p><strong>html</strong><i>Content</i></p>',
+        markdownContent: '**markdown**_Content_',
+        markdownConfig: {
+          language: 'ru'
+        }
+      },
+      template: `
+        <div>
+          <h1>ClassicEditor</h1>
+          <vue-ckeditor type="classic" v-model="htmlContent"></vue-ckeditor><br /><br />
+          <h1>InlineEditor</h1>
+          <vue-ckeditor type="inline" v-model="htmlContent"></vue-ckeditor><br /><br />
+          <h1>html content</h1>
+          <div>{{ htmlContent }}</div><br /><br />
+
+          <h1>ClassicEditor with markdown</h1>
+          <vue-ckeditor type="markdown" v-model="markdownContent" :config="markdownConfig"></vue-ckeditor><br /><br />
+          <h1>markdown content</h1>
+          <div>{{ markdownContent }}</div>
+        </div>
+      `
+    })
+  </script>
+</body>
+
+</html>

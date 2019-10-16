@@ -112,7 +112,11 @@ $extension="jpg";
 
             $slider->titulo=$request->titulo;
             $slider->visibilidad=$request->visible;
+
             $numero = Slider::where('visibilidad', '=', 1)->count();
+            if($slider->visibilidad==1){
+                $numero=$numero-1;
+            }
             if($numero > 1 && $request->visible==1){
                 return -5;
             }else{

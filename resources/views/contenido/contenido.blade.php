@@ -18,13 +18,15 @@
     <h1>Hola mundo menu 4</h1>
 </template>
 <template v-if="menu==5">
-    <h1>Hola mundo menu 5</h1>
+    <evento></evento>
+
+
 </template>
 <template v-if="menu==6">
     <h1>Hola mundo menu 6</h1>
 </template>
 <template v-if="menu==7">
-
+<novedad></novedad>
 </template>
 <template v-if="menu==8">
     <h1>Hola mundo menu 8</h1>

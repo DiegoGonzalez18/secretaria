@@ -11,6 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
+
 mix.styles([
     'resources/plantilla/css/font-awesome.min.css',
     'resources/plantilla/css/simple-line-icons.min.css',
@@ -26,3 +27,5 @@ mix.styles([
     'resources/plantilla/js/sweetalert2.all.js'
 ], 'public/js/plantilla.js')
 .js(['resources/js/app.js'],'public/js/app.js');
+
+

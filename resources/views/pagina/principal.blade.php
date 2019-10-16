@@ -79,7 +79,7 @@ integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm
         <link type="text/css" rel="stylesheet" href="css/custom-hover-effects.min.css">
         <link type="text/css" rel="stylesheet" href="css/custom.min.css">
         <link type="text/css" rel="stylesheet" href="css/pgwslider.min.css">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
 
  </head>
 
@@ -132,7 +132,7 @@ integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm
 
 
         <!--=== End Footer Version 1 ===-->
-
+        <script src="vue-ckeditor5/dist/vue-ckeditor5.js"></script>
 
 		<script type="text/javascript" src="js/pgwslider.min.js"></script>
 
@@ -165,7 +165,6 @@ integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm
 		<script type="text/javascript" src="js/owl-recent-works.min.js"></script>
 
 		<script type="text/javascript" src="js/wow.min.js"></script>
-
 
     </body>
 </html>
